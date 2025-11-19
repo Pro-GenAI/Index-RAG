@@ -1,14 +1,14 @@
-<img src="./assets/project_logo.jpg" alt="Project logo" width="270px" align="left"/>
-<!-- $ convert logo_large.png -resize 270x270 project_logo.jpg -->
+<p align="center">
+<img src="./assets/project_banner.gif" alt="Project banner" height="300"/>
+<!-- ffmpeg -i unused/banner_video.mp4 -vf "fps=15,scale=800:-1:flags=lanczos" -loop 0 assets/project_banner.gif -->
+</p>
 
-# Index-RAG: Index-RAG: Storing Text Location in Vector Databases for QA tasks
+# Index-RAG: Storing Text Location in Vector Databases for QA tasks
 ## *The Future of Citation-Accurate RAG Systems*
 [![AI](https://img.shields.io/badge/AI-C21B00?style=for-the-badge&logo=openaigym&logoColor=white)]()
 [![LLMs](https://img.shields.io/badge/LLMs-1A535C?style=for-the-badge&logo=openai&logoColor=white)]()
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54)]()
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-darkgreen.svg?style=for-the-badge&logo=github&logoColor=white)](./LICENSE.md)
-
-<br> <br>
 
 > **Revolutionary RAG Technology**: Store document locations directly in vector databases for unprecedented citation accuracy and retrieval precision.
 
@@ -27,6 +27,10 @@
 ### 🚀 Index-RAG: The Breakthrough Solution
 
 Index-RAG introduces **paragraph-level indexing with question-based embeddings** - a fundamentally better approach that addresses all major RAG limitations while maintaining lightning-fast retrieval.
+
+## Why store index:
+
+We store multiple embeddings per paragraph based on AI-generated questions and the original paragraph text. If each embedding is stored with its text, the storage space used increases. Storing text locations helps in precise citations including file name, page number, and line number without needing to store the entire text multiple times.
 
 ## ✨ Revolutionary Advantages
 
