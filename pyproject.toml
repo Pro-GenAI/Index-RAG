@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "index_rag"
+version = "0.1.0"
+description = "An AI-powered investment education platform with RAG capabilities"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "python-dotenv",
+    "openai",
+    "deepeval",
+    "langchain",
+    "langchain-openai",
+    "langchain-pinecone",
+    "langchain-community",
+    "langchain-text-splitters",
+    "pypdf",
+    "beautifulsoup4",
+    "requests",
+    "sentence-transformers[cross-encoder]",
+    "streamlit",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "pinecone",
+    "newsapi-python",
+]
